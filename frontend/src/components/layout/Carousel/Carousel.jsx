@@ -29,7 +29,7 @@ const Carousel = ({images}) => {
         <div className='flex flex-row justify-evenly my-2 w-96 mx-auto'>
            
 
-            {images.map((item,index) => ( <button onClick={()=> setCurrentImage(index)}><img className={'w-10 '+((index===currentImage) ? ' shadow-lg rounded-md opacity-100' : ' opacity-60')} src={item.url} alt="No Preview Aailable" /></button>) )}
+            {images.map((item,index) => ( <button key={(index)} onClick={()=> setCurrentImage(index)}><img className={'w-10 '+((index===currentImage) ? ' shadow-lg rounded-md opacity-100' : ' opacity-60')} src={item.url} alt="No Preview Aailable" /></button>) )}
             
 
         </div>

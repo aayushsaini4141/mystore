@@ -91,11 +91,11 @@ const Cart = () => {
             </div>
             <div className='flex flex-row justify-between py-4 border-b border-black'>
                 <h2 className='text-gray-500 font-bold'>Tax Estimate</h2>
-                <p className='font-bold'>&#8377;99.00</p>
+                <p className='font-bold'>&#8377;99.00</p>``
             </div>
             <div className='flex flex-row justify-between py-4 '>
                 <h2 className='text-black  text-lg font-sans'>Order Total</h2>
-                <p className='font-bold font-sans'>&#8377;199.00</p>
+                <p className='font-bold font-sans'>&#8377;&#8377;{cartItems.reduce((acc,item) => acc + item.quantity * item.price,198)} </p>
             </div>
             <button className='bg-purple-600 hover:bg-purple-700 text-white font-bold w-full p-2 mt-3 rounded-md' onClick={checkoutHandler}>Checkout</button>
             </div>

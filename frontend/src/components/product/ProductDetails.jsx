@@ -108,7 +108,7 @@ const ProductDetails = () => {
                     <div className="flex-1 p-4 border-l-4 my-2 border-black ">
                     <h1 className="text-3xl font-bold mb-3 capitalize">{product && product.name}</h1>
                     <div className="flex flex-row flex-nowrap" >
-                        <Rating classNames="m-0 p-0" {...options} /> <span className='whitespace-nowrap ml-4 justify-center items-center'>({product.numOfReviews} ratings)</span>
+                        <Rating className="m-0 p-0" {...options} /> <span className='whitespace-nowrap ml-4 justify-center items-center'>({product.numOfReviews} ratings)</span>
                     </div>
                     <h2 className="font-semibold text-lg text-white p-2 inline-block bg-black rounded-md m-3  ml-0 ">Price : <span className='text-sm'>₹</span>{product.price}</h2>
                     {/* Product Buy Section */}
